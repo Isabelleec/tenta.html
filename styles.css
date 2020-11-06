@@ -1,4 +1,175 @@
+body{
+
+    font-style: italic;
+    background-color: rgb(146, 174, 209);
+}
+
+
 .intro{
 
     text-align: center;
+    font-size: 4rem;
+}
+
+.insert{
+
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border: 2px solid black;
+    width: 300px;
+    padding: 10px;
+    margin-left: 43rem;
+    
+    
+}
+.port{
+
+    margin-left: 15%;
+   
+  }
+ 
+.navbar {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.699);
+    font-family: Arial;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    
+  }
+  
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color:  rgb(90, 106, 126);
+    color: white;
+    font-size: 20px;
+    
+  }
+  
+  .welcome{
+
+    text-align: center;
+    
+    font-size: 1.5rem;
+    width: 400px;
+    margin: auto;
+  }
+  .film1 { color: #00fff2; } 
+  .film2 { color: #09ff00; } 
+  .film3 { color: #ff0055; } 
+  .film4 { color: #fffb00; } 
+  .film5 { color: #ae00ff; } 
+
+  .lista{
+
+    
+    width: 400px;
+    margin: auto;
+    border: 0.5rem solid black;
+    padding: 1.5rem;
+    
+  }
+  .rubrik{
+
+    text-align: center;
+    font-size: 25px;
+  }
+  .outer{
+
+    border: 0.5rem solid black;
+    width: 400px;
+    margin: auto;
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+  .series{
+    text-align: center;
+    font-size: 25px;
+  }
+
+  
+  .square {
+    position: relative;
+    height: 100px;
+    margin-top: 15rem;
+}
+
+.left,
+.center,
+.right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.left { background: rgb(0, 0, 0) }
+.center { background: rgb(121, 221, 221) }
+.right { background: rgb(0, 0, 0) }
+
+.left,
+.right { width: 20px }
+.left { border-radius: 20px 0 0 20px }
+.right { border-radius: 0 20px 20px 0 }
+
+
+
+.center {
+    left: 20px;
+    width: 1px;
+    transform: scaleX(60);
+    transform-origin: left;
+}
+
+.right {
+    transform: translateX(80px);
+}
+.center {
+    animation: center-animate 1s ease infinite alternate;
+}
+
+.right {
+    animation: right-animate 1s ease infinite alternate;
+}
+
+@keyframes right-animate {
+    0% { transform: translateX(140px) }
+    100% { transform: translateX(20px) }
+}
+
+@keyframes center-animate {
+    0% { transform: scaleX(120) }
+    100% { transform: scaleX(0) }
+}
+
+#product-list{
+    display:none;
+    font-size: 25px;
+}
+#products:hover ~ #product-list{
+    display:block;
+}
+
+#product-list:hover{
+    display:block;
+}
+.lastitem{
+
+    align-items: center;
+
+}
+#products{
+
+    color: black;
+    font-size: 30px;
+    
 }
